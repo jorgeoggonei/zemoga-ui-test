@@ -1,0 +1,57 @@
+@import '../../mixins';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dotted $dark;
+  padding: 15px 0;
+  font-weight: 300;
+  @include contentWidth();
+  @include breakpoint(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  &__links {
+    text-align: center;
+    ul {
+      list-style-type: none;
+      @include breakpoint(md) {
+        display: flex;
+        flex-direction: row;
+      }
+      li {
+        margin-bottom: 10px;
+        @include breakpoint(md) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  &__nets {
+    text-align: center;
+    @include breakpoint(md) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    p {
+      @include breakpoint(md) {
+        margin-bottom: 3px;
+      }
+    }
+    svg {
+      padding: 0 6px;
+      font-size: 25px;
+      @include breakpoint(md) {
+        margin-left: 20px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

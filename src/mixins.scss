@@ -1,0 +1,20 @@
+$max-width: 1280px;
+
+$light: #ffffff;
+$dark: #333333;
+
+$positive: #1cbbb4;
+$positiveOpacity: rgba(28, 187, 180, 0.7);
+$negative: #ffad1d;
+$negativeOpacity: rgba(255, 173, 29, 0.7);
+
+@mixin contentWidth() {
+    max-width: 1024px;
+    margin: auto;
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 768px) { @content ; }
+ }
+}
