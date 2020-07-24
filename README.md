@@ -17,6 +17,8 @@ Due to time, I didn't can complete all the test. My apologize for that.
 
 The JSON file structure was created by the rulings.
 
-In the previous rulings, the thumb in the left side of the person's name doesn't appear if the votes have the same number in positive and negative.
+I used React, sass, axios in my development
+
+In the previous rulings section , the thumb in the left side of the person's name doesn't appear if the votes have the same number in positive and negative.
 
 Thanks for the opportunity.
